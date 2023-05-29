@@ -10,7 +10,7 @@ function ToyContainer({ toys, setToys}) {
   }, [])
 
   const renderToys = toys.map(toy => {
-    return <ToyCard key={toy.id} toy={toy} />
+    return <ToyCard key={toy.id} toy={toy} setToys={setToys} />
   })
 
   return (
